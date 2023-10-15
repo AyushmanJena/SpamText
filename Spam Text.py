@@ -1,8 +1,11 @@
-import pyautogui, time
-time.sleep(5)
+import pyautogui
+
+pyautogui.sleep(10)
 f = open("Messages.txt", 'r')
+
 for word in f:
-	pyautogui.typewrite(word)
-	pyautogui.press("enter")
-	time.sleep(2)
-	
+    pyautogui.typewrite(word)
+    pyautogui.press("enter")
+    pyautogui.sleep(1)
+
+f.close()
